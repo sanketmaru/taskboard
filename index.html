@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Taskboard</title>
+    <style>
+      .boxed {
+        width:200px;
+        height:200px;
+        border: 1px solid;
+        float: left;
+        margin-left: 40px;
+        margin-top: 40px;
+      }
+      .heading {
+        text-align: center;
+        font-size: 20px;
+      }
+      .imageDiv {
+        float:right;
+      }
+    </style>
+
+  </head>
+  <body onLoad="run()">
+    <div>
+      Task Name :- <input type="text" id="taskName"></input>
+      <input type="submit" onclick="addTask();"></input>
+    </div>
+    <div id="boards">
+    </div>
+    <div id = "boardTemplate" class="boxed" style="display:none;">
+      <table>
+      </table>
+    </div>
+    <script type="text/javascript" src="board.js"></script>
+    <script type="text/javascript" src="board-template.js"></script>
+    <script type="text/javascript" src="complete-board-template.js"></script>
+    <script type="text/javascript" src="board-element.js"></script>
+    <script type="text/javascript" src="task.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
